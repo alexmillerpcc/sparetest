@@ -16,6 +16,7 @@ function setup() {
 function draw() {
   let x = width/2;
   let y = height/2;
+  let wh = windowHeight;
   fill(255);
   
   if (t < 10){
@@ -26,13 +27,13 @@ function draw() {
   if (t >= 10 && t < 20){
     screenWrite("I hope you can.", x, y);
     if (t > 16){
-      text("3", x - 100, y + 50);
+      text("3", x - wh/7, y + wh/14);
     }
     if (t > 17){
-      text("2", x, y + 50);
+      text("2", x, y + wh/14);
     }
     if (t > 18){
-      text("1", x + 100, y + 50); 
+      text("1", x + wh/7, y + wh/14); 
     }
   }
   
