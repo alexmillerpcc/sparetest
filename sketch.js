@@ -1,12 +1,14 @@
 let t = 0;
 function setup() {
-  createCanvas(1280, 720);
+  createCanvas(windowWidth, windowHeight);
+  //createCanvas(1280,720);
   smooth();
   background(0);
   stroke(255);
   frameRate(1);
   textAlign(CENTER);
-  textSize(40);
+  //textSize(40);
+  textSize(windowHeight/16);
   
   
 }
